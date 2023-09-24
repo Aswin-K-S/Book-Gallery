@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(51, 122, 166);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* This aligns the contents at both ends */
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: relative;
+    position: sticky;
+    top: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.hl {
+    display: flex;
+    align-items: center;
+}
+
+.hl img {
+    width: 40px;
+    margin-right: 10px;/ margin-left: 10px;
+}
+
+header h1 {
+    color: antiquewhite;
+    text-align: left;
+    padding: 10px;
+}
+
+header h1:hover {
+    color: rgb(27, 72, 74);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(27, 72, 74);
+}
+
+footer {
+    box-shadow: 0px -5px 10px;
+    position: relative;
+    z-index: 0;
+
+
+}
+
+footer h2,
+h3 {
+    background-color: rgb(51, 122, 166);
+    height: 30px;
+    width: 100%;
+    color: antiquewhite;
+    text-align: center;
+}
+
+footer h2:hover {
+    color: rgb(27, 72, 74);
+}
+
+h3:hover {
+    color: rgb(27, 72, 74);
+}
+
+.banner {
+    background-image: url(https://img.freepik.com/premium-photo/row-old-books-blue-shelf-horizontal-background-banner_118047-9024.jpg?w=1380);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    box-shadow: 0px 5px 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-overlay h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-overlay p {
+    font-size: 18px;
+}
+
+.row {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(24, 96, 147);
+    display: flex;
+    justify-content: space-around
+}
+
+.col {
+    background-color: rgb(158, 198, 222);
+    width: 250px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.col:hover {
+    background-color: rgb(3, 50, 104);
+    color: beige;
+}
+
+.row img {
+    width: 220px;
+    height: 250px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(12, 192, 12);
+
+}
+
+button:hover {
+    background-color: green;
+}
+
+#quote {
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    margin-left: 70px;
+
+}
+
+
+@media screen and (max-width:400px) {
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    nav {
+        width: 100%;
+
+        padding: 10px;
+        position: sticky;
+        top: 0;
+
+        height: 50px;
+
+    }
+
+    nav ul li {
+        padding: 0%;
+    }
+
+    nav ul li a {
+        margin: 10px;
+    }
+    #quote{
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .row{
+        margin-top: -20px;
+        width: 438px;
+        height: 1300px;
+        display: block;
+        padding-top: 10px;
+    }
+    .row img{
+        width:80px;
+    }
+  .col{
+    width: 70%;
+    height: 200px;
+     margin-bottom: 0px;
+    margin-left: 30px;
+    margin-top: 50px;
+    padding: 30px;
+   
+   
+  }
+  .banner{
+    width: 435px;
+  }
+  footer{
+    width: 435px;
+  }
+}
